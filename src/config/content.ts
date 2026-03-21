@@ -60,6 +60,69 @@ export const siteContent = {
     pt: 'Ver mais →',
     en: 'See more →',
   },
+  book: {
+    title: 'O Super-8 no AI-5',
+    subtitle: {
+      pt: 'Memórias de cinema e juventude na década de 1970',
+      en: 'Memories of cinema and youth in the 1970s',
+    },
+    author: 'Mayra Jucá',
+    publisher: 'Letra Capital',
+    description: {
+      pt: 'O trabalho combina pesquisa fílmica, análise documental, bibliografia e entrevistas. A autora utiliza conteúdo audiovisual como ferramenta de ativação de memória das experiências juvenis durante os anos da ditadura militar no Brasil.',
+      en: 'The work combines film research, documentary analysis, bibliography and interviews. The author uses audiovisual content as a memory activation tool for youth experiences during Brazil\'s military dictatorship years.',
+    },
+    quote: {
+      pt: '"Referências a câmeras como armas aparecem em depoimentos de superoitistas e em diversos textos dos anos 1970, incluindo o trabalho do cineasta Sérgio Péo: o equipamento funcionava como instrumento decolonizador..."',
+      en: '"Camera references as weapons appear in statements from Super-8 filmmakers and various 1970s texts, including filmmaker Sérgio Péo\'s work: equipment functioned as a decolonizing instrument..."',
+    },
+    launches: [
+      {
+        date: { pt: '15 de junho de 2025', en: 'June 15, 2025' },
+        location: { pt: 'Bienal do Livro do Rio de Janeiro', en: 'Rio de Janeiro Book Biennial' },
+      },
+      {
+        date: { pt: '8 de agosto de 2025', en: 'August 8, 2025' },
+        location: { pt: 'Estação Net Rio, Botafogo — sessão de autógrafos', en: 'Estação Net Rio cinema, Botafogo — book signing' },
+      },
+      {
+        date: { pt: '16 de agosto de 2025', en: 'August 16, 2025' },
+        location: { pt: 'Soberano Bar-museu, São Paulo — Festival Super-OFF', en: 'Soberano Bar-museu, São Paulo — Festival Super-OFF' },
+      },
+    ],
+    endorsements: [
+      {
+        name: 'Rubens Machado Jr.',
+        affiliation: 'ECA-USP',
+      },
+      {
+        name: 'Mariana Cavalcanti',
+        affiliation: 'IESP-UERJ',
+      },
+      {
+        name: 'Thaís Blank',
+        affiliation: 'FGV-CPDOC',
+      },
+      {
+        name: 'Patrícia Machado',
+        affiliation: 'PUC-Rio',
+      },
+    ],
+    purchase: {
+      email: 'livrosuper8@gmail.com',
+      store: {
+        pt: 'Lojinha Cavídeo na Estação Net Rio, Rio de Janeiro',
+        en: 'Lojinha Cavídeo at Estação Net Rio cinema, Rio de Janeiro',
+      },
+    },
+    launchesTitle: { pt: 'Lançamentos', en: 'Launch Events' },
+    endorsementsTitle: { pt: 'Endossos', en: 'Endorsements' },
+    purchaseTitle: { pt: 'Onde Adquirir', en: 'Where to Buy' },
+    publisherNote: {
+      pt: 'Letra Capital — +28 anos como editora acadêmica.',
+      en: 'Letra Capital — 28+ years as an academic publisher.',
+    },
+  },
   sections: {
     editorial: {
       title: { pt: 'Editorial', en: 'Editorial' },
@@ -72,9 +135,10 @@ export const siteContent = {
           year: '2025',
           title: { pt: 'O Super-8 no AI-5', en: 'O Super-8 no AI-5' },
           description: {
-            pt: 'Autora do livro O Super-8 no AI-5: memórias de cinema e juventude na década de 1970, pela editora Letra Capital. O trabalho combina pesquisa fílmica, análise documental, bibliografia e entrevistas, utilizando conteúdo audiovisual como ferramenta de ativação de memória das experiências juvenis durante os anos da ditadura militar. Lançado na Bienal do Livro do Rio de Janeiro em junho de 2025. Endossado por Rubens Machado Jr. (ECA-USP), Mariana Cavalcanti (IESP-UERJ), Thaís Blank (FGV-CPDOC) e Patrícia Machado (PUC-Rio).',
-            en: 'Author of O Super-8 no AI-5: memories of cinema and youth in the 1970s, published by Letra Capital. The work combines film research, documentary analysis, bibliography and interviews, using audiovisual content as a memory activation tool for youth experiences during Brazil\'s military dictatorship years. Launched at the Rio de Janeiro Book Biennial in June 2025. Endorsed by Rubens Machado Jr. (ECA-USP), Mariana Cavalcanti (IESP-UERJ), Thaís Blank (FGV-CPDOC) and Patrícia Machado (PUC-Rio).',
+            pt: 'Autora do livro O Super-8 no AI-5: memórias de cinema e juventude na década de 1970, pela editora Letra Capital.',
+            en: 'Author of O Super-8 no AI-5: memories of cinema and youth in the 1970s, published by Letra Capital.',
           },
+          link: '/o-super-8-no-ai-5',
         },
         {
           year: '2022',

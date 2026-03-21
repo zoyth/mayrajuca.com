@@ -1,6 +1,7 @@
 // ABOUTME: Reusable portfolio timeline section component.
 // ABOUTME: Displays a list of portfolio items with year badges, matching the PDF layout.
 
+import Link from 'next/link';
 import type { Locale } from '@/config/content';
 import { t } from '@/config/content';
 
@@ -9,6 +10,7 @@ interface PortfolioItem {
   title: Record<string, string>;
   description: Record<string, string>;
   image?: string;
+  link?: string;
 }
 
 interface PortfolioSectionProps {
@@ -56,11 +58,25 @@ export function PortfolioSection({
                 </div>
                 <div className="flex-1">
                   <h2 className="font-heading font-bold text-xl mb-2">
-                    {t(item.title, locale)}
+                    {item.link ? (
+                      <Link href={`/${locale}${item.link}`} className="hover:text-primary transition-colors">
+                        {t(item.title, locale)}
+                      </Link>
+                    ) : (
+                      t(item.title, locale)
+                    )}
                   </h2>
                   <p className="text-text-light leading-relaxed">
                     {t(item.description, locale)}
                   </p>
+                  {item.link && (
+                    <Link
+                      href={`/${locale}${item.link}`}
+                      className="inline-block mt-3 text-primary text-sm font-medium hover:opacity-80 transition-opacity"
+                    >
+                      {locale === 'pt' ? 'Saiba mais →' : 'Learn more →'}
+                    </Link>
+                  )}
                 </div>
               </article>
             ))}
