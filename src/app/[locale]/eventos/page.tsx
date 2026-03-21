@@ -1,21 +1,21 @@
-// ABOUTME: Ações Formativas portfolio page showing teaching and training work.
-// ABOUTME: Displays timeline of educational and training initiatives.
+// ABOUTME: Unified events page combining exhibitions, conferences, and festivals.
+// ABOUTME: Displays all event participations in chronological order.
 
 import { type Locale, siteContent, t } from '@/config/content';
 import { PortfolioSection } from '@/components/portfolio-section';
 
 export const metadata = {
-  title: 'Ações Formativas — Mayra Jucá',
+  title: 'Eventos — Mayra Jucá',
 };
 
-export default async function FormativasPage({
+export default async function EventosPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale: l } = await params;
   const locale = l as Locale;
-  const { title, subtitle, items } = siteContent.sections.formativas;
+  const { title, subtitle, items } = siteContent.sections.eventos;
 
   return (
     <PortfolioSection

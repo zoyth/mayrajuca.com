@@ -13,11 +13,12 @@ export function generateStaticParams() {
 function getNavLinks(locale: Locale) {
   return [
     { href: `/${locale}`, label: t(siteContent.nav.home, locale) },
+    { href: `/${locale}/sobre`, label: t(siteContent.nav.sobre, locale) },
     { href: `/${locale}/editorial`, label: t(siteContent.nav.editorial, locale) },
-    { href: `/${locale}/exposicoes-e-eventos`, label: t(siteContent.nav.exposicoes, locale) },
     { href: `/${locale}/audiovisual`, label: t(siteContent.nav.audiovisual, locale) },
-    { href: `/${locale}/mostras-festivais-seminarios`, label: t(siteContent.nav.mostras, locale) },
-    { href: `/${locale}/acoes-formativas`, label: t(siteContent.nav.formativas, locale) },
+    { href: `/${locale}/eventos`, label: t(siteContent.nav.eventos, locale) },
+    { href: `/${locale}/formacao`, label: t(siteContent.nav.formacao, locale) },
+    { href: `/${locale}/trajetoria`, label: t(siteContent.nav.trajetoria, locale) },
     { href: `/${locale}/contato`, label: t(siteContent.nav.contato, locale) },
   ];
 }

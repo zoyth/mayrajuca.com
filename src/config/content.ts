@@ -78,11 +78,12 @@ export const siteContent = {
   },
   nav: {
     home: { pt: 'Início', en: 'Home' },
+    sobre: { pt: 'Sobre', en: 'About' },
     editorial: { pt: 'Editorial', en: 'Editorial' },
-    exposicoes: { pt: 'Exposições e Eventos', en: 'Exhibitions & Events' },
     audiovisual: { pt: 'Audiovisual', en: 'Audiovisual' },
-    mostras: { pt: 'Mostras e Seminários', en: 'Screenings & Seminars' },
-    formativas: { pt: 'Ações Formativas', en: 'Training' },
+    eventos: { pt: 'Eventos', en: 'Events' },
+    formacao: { pt: 'Formação', en: 'Teaching' },
+    trajetoria: { pt: 'Trajetória', en: 'Career' },
     contato: { pt: 'Contato', en: 'Contact' },
   },
   areasTitle: {
@@ -92,6 +93,9 @@ export const siteContent = {
   seeMore: {
     pt: 'Ver mais →',
     en: 'See more →',
+  },
+  featured: {
+    label: { pt: 'Destaque', en: 'Featured' },
   },
   article: {
     title: {
@@ -166,76 +170,27 @@ export const siteContent = {
       },
     ],
     press: [
-      {
-        outlet: 'O Globo',
-        author: 'Ancelmo Góis',
-        title: {
-          pt: 'Bienal: Jornalista lança livro sobre a importância das câmeras Super-8 para retratar a juventude dos anos 1970',
-          en: 'Biennial: Journalist launches book on the importance of Super-8 cameras for portraying 1970s youth',
-        },
-      },
-      {
-        outlet: 'Associação Brasileira de Imprensa',
-        title: {
-          pt: 'Bienal: Jornalista lança livro sobre a importância das câmeras Super-8 para retratar a juventude dos anos 1970',
-          en: 'Biennial: Journalist launches book on the importance of Super-8 cameras for portraying 1970s youth',
-        },
-      },
-      {
-        outlet: 'Rádio Roquette Pinto',
-        title: {
-          pt: 'Mayra Jucá lança livro sobre cinema e juventude nos anos 1970',
-          en: 'Mayra Jucá launches book on cinema and youth in the 1970s',
-        },
-      },
-      {
-        outlet: 'Jornal do Commercio',
-        title: {
-          pt: 'Cinema e juventude contra a ditadura',
-          en: 'Cinema and youth against the dictatorship',
-        },
-      },
-      {
-        outlet: 'TV Liberal (Bom Dia Pará)',
-        title: {
-          pt: 'Entrevista ao vivo — Encontro SOCINE, Belém',
-          en: 'Live interview — SOCINE Conference, Belém',
-        },
-      },
+      { outlet: 'O Globo', author: 'Ancelmo Góis', title: { pt: 'Bienal: Jornalista lança livro sobre a importância das câmeras Super-8 para retratar a juventude dos anos 1970', en: 'Biennial: Journalist launches book on the importance of Super-8 cameras for portraying 1970s youth' } },
+      { outlet: 'Associação Brasileira de Imprensa', title: { pt: 'Bienal: Jornalista lança livro sobre a importância das câmeras Super-8 para retratar a juventude dos anos 1970', en: 'Biennial: Journalist launches book on the importance of Super-8 cameras for portraying 1970s youth' } },
+      { outlet: 'Rádio Roquette Pinto', title: { pt: 'Mayra Jucá lança livro sobre cinema e juventude nos anos 1970', en: 'Mayra Jucá launches book on cinema and youth in the 1970s' } },
+      { outlet: 'Jornal do Commercio', title: { pt: 'Cinema e juventude contra a ditadura', en: 'Cinema and youth against the dictatorship' } },
+      { outlet: 'TV Liberal (Bom Dia Pará)', title: { pt: 'Entrevista ao vivo — Encontro SOCINE, Belém', en: 'Live interview — SOCINE Conference, Belém' } },
     ],
     pressTitle: { pt: 'Na Imprensa', en: 'Press Coverage' },
     endorsements: [
-      {
-        name: 'Rubens Machado Jr.',
-        affiliation: 'ECA-USP',
-      },
-      {
-        name: 'Mariana Cavalcanti',
-        affiliation: 'IESP-UERJ',
-      },
-      {
-        name: 'Thaís Blank',
-        affiliation: 'FGV-CPDOC',
-      },
-      {
-        name: 'Patrícia Machado',
-        affiliation: 'PUC-Rio',
-      },
+      { name: 'Rubens Machado Jr.', affiliation: 'ECA-USP' },
+      { name: 'Mariana Cavalcanti', affiliation: 'IESP-UERJ' },
+      { name: 'Thaís Blank', affiliation: 'FGV-CPDOC' },
+      { name: 'Patrícia Machado', affiliation: 'PUC-Rio' },
     ],
     purchase: {
       email: 'livrosuper8@gmail.com',
-      store: {
-        pt: 'Lojinha Cavídeo na Estação Net Rio, Rio de Janeiro',
-        en: 'Lojinha Cavídeo at Estação Net Rio cinema, Rio de Janeiro',
-      },
+      store: { pt: 'Lojinha Cavídeo na Estação Net Rio, Rio de Janeiro', en: 'Lojinha Cavídeo at Estação Net Rio cinema, Rio de Janeiro' },
     },
     launchesTitle: { pt: 'Lançamentos', en: 'Launch Events' },
     endorsementsTitle: { pt: 'Endossos', en: 'Endorsements' },
     purchaseTitle: { pt: 'Onde Adquirir', en: 'Where to Buy' },
-    publisherNote: {
-      pt: 'Letra Capital — +28 anos como editora acadêmica.',
-      en: 'Letra Capital — 28+ years as an academic publisher.',
-    },
+    publisherNote: { pt: 'Letra Capital — +28 anos como editora acadêmica.', en: 'Letra Capital — 28+ years as an academic publisher.' },
   },
   sections: {
     editorial: {
@@ -245,89 +200,12 @@ export const siteContent = {
         en: '20+ years of experience coordinating memoir, biography and collective authorship book projects.',
       },
       items: [
-        {
-          year: '2025',
-          title: { pt: 'O Super-8 no AI-5', en: 'O Super-8 no AI-5' },
-          description: {
-            pt: 'Autora do livro O Super-8 no AI-5: memórias de cinema e juventude na década de 1970, pela editora Letra Capital.',
-            en: 'Author of O Super-8 no AI-5: memories of cinema and youth in the 1970s, published by Letra Capital.',
-          },
-          link: '/o-super-8-no-ai-5',
-        },
-        {
-          year: '2022',
-          title: { pt: 'Revista História Oral', en: 'Revista História Oral' },
-          description: {
-            pt: 'Publicação em Revista História Oral - entrevista bilingue. Sobre compartilhar histórias e o desafio criativo de mantê-las vivas: entrevista com Steven High, fundador do Centre for Oral History and Digital Storytelling na Concordia University, em Montreal.',
-            en: 'Publication in Revista História Oral — bilingual interview. On sharing stories and the creative challenge of keeping them alive: interview with Steven High, founder of the Centre for Oral History and Digital Storytelling at Concordia University, Montreal.',
-          },
-          link: '/historia-oral-steven-high',
-        },
-        {
-          year: '2021–2025',
-          title: { pt: 'Livros de Samuel Aarão Reis', en: 'Books by Samuel Aarão Reis' },
-          description: {
-            pt: 'Coordenadora editorial dos livros do historiador Samuel Aarão Reis: Memória guerreira não se apaga nunca (2021); Conversas à beira-mar (2021); Escrevendo torto por linhas tortas e outras histórias (2024); e Longe do mar, quem eu sou? (2025).',
-            en: 'Editorial coordinator for historian Samuel Aarão Reis\' books: Memória guerreira não se apaga nunca (2021); Conversas à beira-mar (2021); Escrevendo torto por linhas tortas e outras histórias (2024); and Longe do mar, quem eu sou? (2025).',
-          },
-        },
-        {
-          year: '2018',
-          title: { pt: 'BUG Narrativas Interativas e Imersivas', en: 'BUG Interactive and Immersive Narratives' },
-          description: {
-            pt: 'Coautora e coordenadora editorial do livro BUG Narrativas Interativas e Imersivas — contribuição teórica em publicação coletiva bilingue, Oi Futuro.',
-            en: 'Co-author and editorial coordinator of BUG Interactive and Immersive Narratives — theoretical contribution to a bilingual collective publication, Oi Futuro.',
-          },
-        },
-        {
-          year: '2009',
-          title: { pt: 'Viva Favela', en: 'Viva Favela' },
-          description: {
-            pt: 'Coordenadora editorial do livro Viva Favela — curadoria de ensaios de fotógrafos periféricos.',
-            en: 'Editorial coordinator of the book Viva Favela — curating photo essays by peripheral community photographers.',
-          },
-        },
-        {
-          year: '2006',
-          title: { pt: 'Maria Muniz, A Sherazade do Rádio', en: 'Maria Muniz, The Scheherazade of Radio' },
-          description: {
-            pt: 'Coautora do livro Maria Muniz, A Sherazade do Rádio — pesquisa biográfica e narrativa histórica.',
-            en: 'Co-author of Maria Muniz, The Scheherazade of Radio — biographical research and historical narrative.',
-          },
-        },
-      ],
-    },
-    exposicoes: {
-      title: { pt: 'Exposições e Eventos', en: 'Exhibitions & Events' },
-      subtitle: {
-        pt: '+20 anos atuando na concepção de projetos e eventos audiovisuais, culturais e, mais recentemente, de pesquisa para instituições de ensino e organizações do terceiro setor.',
-        en: '20+ years designing audiovisual, cultural and research projects and events for educational institutions and nonprofit organizations.',
-      },
-      items: [
-        {
-          year: '2025',
-          title: { pt: 'Lançamentos do livro O Super-8 no AI-5', en: 'Book launches: O Super-8 no AI-5' },
-          description: {
-            pt: 'Lançamento na Bienal do Livro do Rio de Janeiro (15 de junho); sessão de autógrafos na Estação Net Rio, Botafogo (8 de agosto); lançamento em São Paulo no Soberano Bar-museu durante o Festival Super-OFF (16 de agosto).',
-            en: 'Launch at the Rio de Janeiro Book Biennial (June 15); book signing at Estação Net Rio cinema, Botafogo (August 8); São Paulo launch at Soberano Bar-museu during Festival Super-OFF (August 16).',
-          },
-        },
-        {
-          year: '2025',
-          title: { pt: 'Olhares Negros, Museu de Arte do Rio', en: 'Olhares Negros, Rio Art Museum' },
-          description: {
-            pt: 'Coordenação de Comunicação e Marketing / ONG Luta pela Paz.',
-            en: 'Communications and Marketing Coordination / Fight for Peace NGO.',
-          },
-        },
-        {
-          year: '2023',
-          title: { pt: 'XXII Conferência da IOHA', en: 'XXII IOHA Conference' },
-          description: {
-            pt: 'Oral History in a Digital and Audiovisual World, Fundação Getúlio Vargas - Rio de Janeiro. Organizadora, painelista e mediadora na Conferência Internacional.',
-            en: 'Oral History in a Digital and Audiovisual World, Fundação Getúlio Vargas — Rio de Janeiro. Organizer, panelist and moderator at the International Conference.',
-          },
-        },
+        { year: '2025', title: { pt: 'O Super-8 no AI-5', en: 'O Super-8 no AI-5' }, description: { pt: 'Autora do livro O Super-8 no AI-5: memórias de cinema e juventude na década de 1970, pela editora Letra Capital.', en: 'Author of O Super-8 no AI-5: memories of cinema and youth in the 1970s, published by Letra Capital.' }, link: '/o-super-8-no-ai-5' },
+        { year: '2022', title: { pt: 'Revista História Oral', en: 'Revista História Oral' }, description: { pt: 'Publicação em Revista História Oral - entrevista bilingue. Sobre compartilhar histórias e o desafio criativo de mantê-las vivas: entrevista com Steven High, fundador do Centre for Oral History and Digital Storytelling na Concordia University, em Montreal.', en: 'Publication in Revista História Oral — bilingual interview. On sharing stories and the creative challenge of keeping them alive: interview with Steven High, founder of the Centre for Oral History and Digital Storytelling at Concordia University, Montreal.' }, link: '/historia-oral-steven-high' },
+        { year: '2021–2025', title: { pt: 'Livros de Samuel Aarão Reis', en: 'Books by Samuel Aarão Reis' }, description: { pt: 'Coordenadora editorial dos livros do historiador Samuel Aarão Reis: Memória guerreira não se apaga nunca (2021); Conversas à beira-mar (2021); Escrevendo torto por linhas tortas e outras histórias (2024); e Longe do mar, quem eu sou? (2025).', en: 'Editorial coordinator for historian Samuel Aarão Reis\' books: Memória guerreira não se apaga nunca (2021); Conversas à beira-mar (2021); Escrevendo torto por linhas tortas e outras histórias (2024); and Longe do mar, quem eu sou? (2025).' } },
+        { year: '2018', title: { pt: 'BUG Narrativas Interativas e Imersivas', en: 'BUG Interactive and Immersive Narratives' }, description: { pt: 'Coautora e coordenadora editorial do livro BUG Narrativas Interativas e Imersivas — contribuição teórica em publicação coletiva bilingue, Oi Futuro.', en: 'Co-author and editorial coordinator of BUG Interactive and Immersive Narratives — theoretical contribution to a bilingual collective publication, Oi Futuro.' } },
+        { year: '2009', title: { pt: 'Viva Favela', en: 'Viva Favela' }, description: { pt: 'Coordenadora editorial do livro Viva Favela — curadoria de ensaios de fotógrafos periféricos.', en: 'Editorial coordinator of the book Viva Favela — curating photo essays by peripheral community photographers.' } },
+        { year: '2006', title: { pt: 'Maria Muniz, A Sherazade do Rádio', en: 'Maria Muniz, The Scheherazade of Radio' }, description: { pt: 'Coautora do livro Maria Muniz, A Sherazade do Rádio — pesquisa biográfica e narrativa histórica.', en: 'Co-author of Maria Muniz, The Scheherazade of Radio — biographical research and historical narrative.' } },
       ],
     },
     audiovisual: {
@@ -337,288 +215,69 @@ export const siteContent = {
         en: '30+ years as an audiovisual producer and researcher, screenwriter and director, and coordinator of interactive narrative and expanded audiovisual projects.',
       },
       items: [
-        {
-          year: '2020–2021',
-          title: { pt: 'Elizabeth Bishop From Brazil, With Love', en: 'Elizabeth Bishop From Brazil, With Love' },
-          description: {
-            pt: 'Pesquisa histórica e iconográfica para Vivian Ostrovsky — suporte a obra audiovisual experimental.',
-            en: 'Historical and iconographic research for Vivian Ostrovsky — supporting an experimental audiovisual work.',
-          },
-        },
-        {
-          year: '2018',
-          title: { pt: 'Para Virar o Jogo', en: 'Para Virar o Jogo (Turning the Tide)' },
-          description: {
-            pt: 'Direção do vídeo clipe Para virar o jogo, campanha contra a violência armada, pelo controle das armas de fogo, para Instituto Igarapé.',
-            en: 'Directed the music video Para virar o jogo, a campaign against gun violence and for firearms control, for Instituto Igarapé.',
-          },
-        },
-        {
-          year: '2016',
-          title: { pt: 'Meu Rio Vale um Webdoc', en: 'Meu Rio Vale um Webdoc' },
-          description: {
-            pt: 'Co-direção do webdoc Meu Rio Vale um Webdoc — projeto formativo e colaborativo das Naves do Conhecimento, Secretaria Municipal de Ciência e Tecnologia do Rio de Janeiro.',
-            en: 'Co-directed the webdoc Meu Rio Vale um Webdoc — a collaborative training project by Naves do Conhecimento, Rio de Janeiro Municipal Science and Technology Department.',
-          },
-        },
-        {
-          year: '2011',
-          title: { pt: 'PeriFeras Musicais', en: 'PeriFeras Musicais (Musical Peripheries)' },
-          description: {
-            pt: 'Coordenação de criação coletiva do webdoc PeriFeras Musicais — projeto interativo sobre música periférica.',
-            en: 'Coordinated collective creation of the webdoc PeriFeras Musicais — an interactive project on peripheral music.',
-          },
-        },
-        {
-          year: '2009',
-          title: { pt: 'Pelos Cantos do Planeta Olinda', en: 'Pelos Cantos do Planeta Olinda' },
-          description: {
-            pt: 'Roteirista e diretora do Documentário Pelos Cantos do Planeta Olinda — exibição em circuito do programa Cinema na Praça da Prefeitura Municipal de Olinda.',
-            en: 'Screenwriter and director of the documentary Pelos Cantos do Planeta Olinda — screened in the Cinema na Praça circuit by the Municipality of Olinda.',
-          },
-        },
-        {
-          year: '2009',
-          title: { pt: 'Carne de Carnaval', en: 'Carne de Carnaval (Carnival Flesh)' },
-          description: {
-            pt: 'Roteirista e diretora do Curta documentário Carne de Carnaval — Festival Cinesul e plataforma Porta Curtas.',
-            en: 'Screenwriter and director of the short documentary Carne de Carnaval — Cinesul Festival and Porta Curtas platform.',
-          },
-        },
-        {
-          year: '2004',
-          title: { pt: 'Viva Favela, um Documentário em Construção', en: 'Viva Favela, a Documentary in Progress' },
-          description: {
-            pt: 'Coordenadora de produção coletiva - Viva Favela, um Documentário em Construção - Festival Films from the South, Oslo.',
-            en: 'Collective production coordinator — Viva Favela, a Documentary in Progress — Films from the South Festival, Oslo.',
-          },
-        },
-        {
-          year: '',
-          title: { pt: 'Um Outro Brasil', en: 'Um Outro Brasil (Another Brazil)' },
-          description: {
-            pt: 'Assistente de direção do documentário Um Outro Brasil, dirigido por Sérgio Goldenberg no Centro de Criação de Imagem Popular (CECIP).',
-            en: 'Assistant director on the documentary Um Outro Brasil, directed by Sérgio Goldenberg at the Centro de Criação de Imagem Popular (CECIP).',
-          },
-        },
-        {
-          year: '1994',
-          title: { pt: 'Túnel', en: 'Túnel (Tunnel)' },
-          description: {
-            pt: 'Roteirista e diretora do Curta de ficção Túnel — roteiro e filme premiados no Festival Núcleo Atlantic de vídeo. Adquirido pela plataforma Porta Curtas.',
-            en: 'Screenwriter and director of the fiction short Túnel — script and film awarded at the Núcleo Atlantic Video Festival. Acquired by Porta Curtas platform.',
-          },
-        },
+        { year: '2020–2021', title: { pt: 'Elizabeth Bishop From Brazil, With Love', en: 'Elizabeth Bishop From Brazil, With Love' }, description: { pt: 'Pesquisa histórica e iconográfica para Vivian Ostrovsky — suporte a obra audiovisual experimental.', en: 'Historical and iconographic research for Vivian Ostrovsky — supporting an experimental audiovisual work.' } },
+        { year: '2018', title: { pt: 'Para Virar o Jogo', en: 'Para Virar o Jogo (Turning the Tide)' }, description: { pt: 'Direção do vídeo clipe Para virar o jogo, campanha contra a violência armada, pelo controle das armas de fogo, para Instituto Igarapé.', en: 'Directed the music video Para virar o jogo, a campaign against gun violence and for firearms control, for Instituto Igarapé.' } },
+        { year: '2016', title: { pt: 'Meu Rio Vale um Webdoc', en: 'Meu Rio Vale um Webdoc' }, description: { pt: 'Co-direção do webdoc Meu Rio Vale um Webdoc — projeto formativo e colaborativo das Naves do Conhecimento, Secretaria Municipal de Ciência e Tecnologia do Rio de Janeiro.', en: 'Co-directed the webdoc Meu Rio Vale um Webdoc — a collaborative training project by Naves do Conhecimento, Rio de Janeiro Municipal Science and Technology Department.' } },
+        { year: '2011', title: { pt: 'PeriFeras Musicais', en: 'PeriFeras Musicais (Musical Peripheries)' }, description: { pt: 'Coordenação de criação coletiva do webdoc PeriFeras Musicais — projeto interativo sobre música periférica.', en: 'Coordinated collective creation of the webdoc PeriFeras Musicais — an interactive project on peripheral music.' } },
+        { year: '2009', title: { pt: 'Pelos Cantos do Planeta Olinda', en: 'Pelos Cantos do Planeta Olinda' }, description: { pt: 'Roteirista e diretora do Documentário Pelos Cantos do Planeta Olinda — exibição em circuito do programa Cinema na Praça da Prefeitura Municipal de Olinda.', en: 'Screenwriter and director of the documentary Pelos Cantos do Planeta Olinda — screened in the Cinema na Praça circuit by the Municipality of Olinda.' } },
+        { year: '2009', title: { pt: 'Carne de Carnaval', en: 'Carne de Carnaval (Carnival Flesh)' }, description: { pt: 'Roteirista e diretora do Curta documentário Carne de Carnaval — Festival Cinesul e plataforma Porta Curtas.', en: 'Screenwriter and director of the short documentary Carne de Carnaval — Cinesul Festival and Porta Curtas platform.' } },
+        { year: '2004', title: { pt: 'Viva Favela, um Documentário em Construção', en: 'Viva Favela, a Documentary in Progress' }, description: { pt: 'Coordenadora de produção coletiva - Viva Favela, um Documentário em Construção - Festival Films from the South, Oslo.', en: 'Collective production coordinator — Viva Favela, a Documentary in Progress — Films from the South Festival, Oslo.' } },
+        { year: '', title: { pt: 'Um Outro Brasil', en: 'Um Outro Brasil (Another Brazil)' }, description: { pt: 'Assistente de direção do documentário Um Outro Brasil, dirigido por Sérgio Goldenberg no Centro de Criação de Imagem Popular (CECIP).', en: 'Assistant director on the documentary Um Outro Brasil, directed by Sérgio Goldenberg at the Centro de Criação de Imagem Popular (CECIP).' } },
+        { year: '1994', title: { pt: 'Túnel', en: 'Túnel (Tunnel)' }, description: { pt: 'Roteirista e diretora do Curta de ficção Túnel — roteiro e filme premiados no Festival Núcleo Atlantic de vídeo. Adquirido pela plataforma Porta Curtas.', en: 'Screenwriter and director of the fiction short Túnel — script and film awarded at the Núcleo Atlantic Video Festival. Acquired by Porta Curtas platform.' } },
       ],
     },
-    mostras: {
-      title: { pt: 'Mostras, Festivais e Seminários', en: 'Screenings, Festivals & Seminars' },
+    eventos: {
+      title: { pt: 'Eventos', en: 'Events' },
       subtitle: {
-        pt: 'Participações como apresentadora, comentadora, debatedora, mediadora e palestrante/painelista em dezenas de eventos para difusão e pesquisa do audiovisual.',
-        en: 'Appearances as presenter, commentator, debater, moderator and speaker/panelist at dozens of audiovisual dissemination and research events.',
+        pt: 'Exposições, conferências, palestras, festivais e seminários — +20 anos de participação em eventos culturais, acadêmicos e audiovisuais.',
+        en: 'Exhibitions, conferences, talks, festivals and seminars — 20+ years of participation in cultural, academic and audiovisual events.',
       },
       items: [
-        {
-          year: '2026',
-          title: { pt: 'Cine Enseada, FGV', en: 'Cine Enseada, FGV' },
-          description: {
-            pt: 'Comentarista convidada.',
-            en: 'Guest commentator.',
-          },
-        },
-        {
-          year: '2025',
-          title: { pt: 'XXVIII Encontro SOCINE, Belém', en: 'XXVIII SOCINE Conference, Belém' },
-          description: {
-            pt: 'Palestra e debate no XXVIII Encontro SOCINE na Universidade Federal do Pará (30 de setembro a 3 de outubro). Lançamento do livro O Super-8 no AI-5. Entrevista ao vivo para TV Liberal, programa Bom Dia Pará (3 de outubro).',
-            en: 'Talk and debate at the XXVIII SOCINE Conference at the Federal University of Pará (September 30 – October 3). Book launch of O Super-8 no AI-5. Live interview on TV Liberal, Bom Dia Pará program (October 3).',
-          },
-        },
-        {
-          year: '2025',
-          title: { pt: 'IESP-UERJ, Rio de Janeiro', en: 'IESP-UERJ, Rio de Janeiro' },
-          description: {
-            pt: 'Palestra e debate sobre o livro O Super-8 no AI-5 no IESP-UERJ (6 de novembro), durante aula aberta da disciplina "Imagens e Pesquisas em Ciências Sociais", coordenada por Mariana Cavalcanti.',
-            en: 'Talk and debate on the book O Super-8 no AI-5 at IESP-UERJ (November 6), during an open class of "Images and Research in Social Sciences", coordinated by Mariana Cavalcanti.',
-          },
-        },
-        {
-          year: '2025',
-          title: { pt: '12º Festival Super-OFF, São Paulo', en: '12th Festival Super-OFF, São Paulo' },
-          description: {
-            pt: 'Palestra e debate no 12º Festival Internacional de Cinema Super 8, com lançamento do livro O Super-8 no AI-5 no Soberano Bar-museu (16 de agosto).',
-            en: 'Talk and debate at the 12th International Super 8 Film Festival, with book launch of O Super-8 no AI-5 at Soberano Bar-museu (August 16).',
-          },
-        },
-        {
-          year: '2025',
-          title: { pt: 'Mostra Cavídeo 28 anos, Estação Net Rio', en: 'Mostra Cavídeo 28th Anniversary, Estação Net Rio' },
-          description: {
-            pt: 'Sessão de autógrafos do livro O Super-8 no AI-5 na Lojinha Cavídeo, Estação Net Rio, Rua Voluntários da Pátria 35, Botafogo (8 de agosto).',
-            en: 'Book signing of O Super-8 no AI-5 at Lojinha Cavídeo, Estação Net Rio, Rua Voluntários da Pátria 35, Botafogo (August 8).',
-          },
-        },
-        {
-          year: '2022',
-          title: { pt: 'Concordia University, Montreal', en: 'Concordia University, Montreal' },
-          description: {
-            pt: 'Emerging Scholars Seminar — Painelista na Concordia.',
-            en: 'Emerging Scholars Seminar — Panelist at Concordia.',
-          },
-        },
-        {
-          year: '2022',
-          title: { pt: 'Retrospectiva Sérgio Péo', en: 'Sérgio Péo Retrospective' },
-          description: {
-            pt: 'Comentadora da sessão Retrospectiva Sérgio Péo, Mostra Curtametralha, Belo Horizonte.',
-            en: 'Session commentator at the Sérgio Péo Retrospective, Curtametralha Festival, Belo Horizonte.',
-          },
-        },
-        {
-          year: '2021',
-          title: { pt: 'Galeria Heterotopias', en: 'Galeria Heterotopias' },
-          description: {
-            pt: 'Expositora convidada, Escola de Comunicação da UFRJ.',
-            en: 'Guest exhibitor, UFRJ School of Communication.',
-          },
-        },
-        {
-          year: '2019',
-          title: { pt: 'ANPUH — Simpósio Nacional de História, Recife', en: 'ANPUH — National History Symposium, Recife' },
-          description: {
-            pt: 'Comunicação no Simpósio Temático "Arte e Cultura na Ditadura Militar". Tema: "Pira e o Super 8 como prática de resistência política".',
-            en: 'Presentation at the thematic symposium "Art and Culture during the Military Dictatorship". Topic: "Pira and Super 8 as a practice of political resistance".',
-          },
-        },
-        {
-          year: '2019',
-          title: { pt: 'CPDOC-FGV e IED-Rio', en: 'CPDOC-FGV and IED-Rio' },
-          description: {
-            pt: 'Palestras sobre mídias digitais e o documentário interativo (CPDOC-FGV, dezembro) e documentários interativos (IED-Rio, setembro).',
-            en: 'Lectures on digital media and interactive documentary (CPDOC-FGV, December) and interactive documentaries (IED-Rio, September).',
-          },
-        },
-        {
-          year: '2011',
-          title: { pt: 'Films from the South, Oslo', en: 'Films from the South, Oslo' },
-          description: {
-            pt: 'Debatedora no The Critical Room, festival de cinema Films from the South, Oslo, Noruega.',
-            en: 'Debater at The Critical Room, Films from the South film festival, Oslo, Norway.',
-          },
-        },
-        {
-          year: '2003',
-          title: { pt: 'Festival CinePE, Recife', en: 'CinePE Festival, Recife' },
-          description: {
-            pt: 'Membro do júri de curtas-metragens do Festival de Cinema CinePE.',
-            en: 'Short film jury member at the CinePE Film Festival.',
-          },
-        },
+        { year: '2026', title: { pt: 'Cine Enseada, FGV', en: 'Cine Enseada, FGV' }, description: { pt: 'Comentarista convidada.', en: 'Guest commentator.' } },
+        { year: '2025', title: { pt: 'Olhares Negros, Museu de Arte do Rio', en: 'Olhares Negros, Rio Art Museum' }, description: { pt: 'Coordenação de Comunicação e Marketing / ONG Luta pela Paz.', en: 'Communications and Marketing Coordination / Fight for Peace NGO.' } },
+        { year: '2025', title: { pt: 'XXVIII Encontro SOCINE, Belém', en: 'XXVIII SOCINE Conference, Belém' }, description: { pt: 'Palestra e debate no XXVIII Encontro SOCINE na Universidade Federal do Pará (30 de setembro a 3 de outubro). Lançamento do livro O Super-8 no AI-5. Entrevista ao vivo para TV Liberal, programa Bom Dia Pará (3 de outubro).', en: 'Talk and debate at the XXVIII SOCINE Conference at the Federal University of Pará (September 30 – October 3). Book launch of O Super-8 no AI-5. Live interview on TV Liberal, Bom Dia Pará program (October 3).' } },
+        { year: '2025', title: { pt: 'IESP-UERJ, Rio de Janeiro', en: 'IESP-UERJ, Rio de Janeiro' }, description: { pt: 'Palestra e debate sobre o livro O Super-8 no AI-5 no IESP-UERJ (6 de novembro), durante aula aberta da disciplina "Imagens e Pesquisas em Ciências Sociais", coordenada por Mariana Cavalcanti.', en: 'Talk and debate on the book O Super-8 no AI-5 at IESP-UERJ (November 6), during an open class of "Images and Research in Social Sciences", coordinated by Mariana Cavalcanti.' } },
+        { year: '2025', title: { pt: '12º Festival Super-OFF, São Paulo', en: '12th Festival Super-OFF, São Paulo' }, description: { pt: 'Palestra e debate no 12º Festival Internacional de Cinema Super 8, com lançamento do livro O Super-8 no AI-5 no Soberano Bar-museu (16 de agosto).', en: 'Talk and debate at the 12th International Super 8 Film Festival, with book launch of O Super-8 no AI-5 at Soberano Bar-museu (August 16).' } },
+        { year: '2025', title: { pt: 'Mostra Cavídeo 28 anos, Estação Net Rio', en: 'Mostra Cavídeo 28th Anniversary, Estação Net Rio' }, description: { pt: 'Sessão de autógrafos do livro O Super-8 no AI-5 na Lojinha Cavídeo, Estação Net Rio, Rua Voluntários da Pátria 35, Botafogo (8 de agosto).', en: 'Book signing of O Super-8 no AI-5 at Lojinha Cavídeo, Estação Net Rio, Rua Voluntários da Pátria 35, Botafogo (August 8).' } },
+        { year: '2023', title: { pt: 'XXII Conferência da IOHA', en: 'XXII IOHA Conference' }, description: { pt: 'Oral History in a Digital and Audiovisual World, Fundação Getúlio Vargas - Rio de Janeiro. Organizadora, painelista e mediadora na Conferência Internacional.', en: 'Oral History in a Digital and Audiovisual World, Fundação Getúlio Vargas — Rio de Janeiro. Organizer, panelist and moderator at the International Conference.' } },
+        { year: '2022', title: { pt: 'Concordia University, Montreal', en: 'Concordia University, Montreal' }, description: { pt: 'Emerging Scholars Seminar — Painelista na Concordia.', en: 'Emerging Scholars Seminar — Panelist at Concordia.' } },
+        { year: '2022', title: { pt: 'Retrospectiva Sérgio Péo', en: 'Sérgio Péo Retrospective' }, description: { pt: 'Comentadora da sessão Retrospectiva Sérgio Péo, Mostra Curtametralha, Belo Horizonte.', en: 'Session commentator at the Sérgio Péo Retrospective, Curtametralha Festival, Belo Horizonte.' } },
+        { year: '2021', title: { pt: 'Galeria Heterotopias', en: 'Galeria Heterotopias' }, description: { pt: 'Expositora convidada, Escola de Comunicação da UFRJ.', en: 'Guest exhibitor, UFRJ School of Communication.' } },
+        { year: '2019', title: { pt: 'ANPUH — Simpósio Nacional de História, Recife', en: 'ANPUH — National History Symposium, Recife' }, description: { pt: 'Comunicação no Simpósio Temático "Arte e Cultura na Ditadura Militar". Tema: "Pira e o Super 8 como prática de resistência política".', en: 'Presentation at the thematic symposium "Art and Culture during the Military Dictatorship". Topic: "Pira and Super 8 as a practice of political resistance".' } },
+        { year: '2019', title: { pt: 'CPDOC-FGV e IED-Rio', en: 'CPDOC-FGV and IED-Rio' }, description: { pt: 'Palestras sobre mídias digitais e o documentário interativo (CPDOC-FGV, dezembro) e documentários interativos (IED-Rio, setembro).', en: 'Lectures on digital media and interactive documentary (CPDOC-FGV, December) and interactive documentaries (IED-Rio, September).' } },
+        { year: '2011', title: { pt: 'Films from the South, Oslo', en: 'Films from the South, Oslo' }, description: { pt: 'Debatedora no The Critical Room, festival de cinema Films from the South, Oslo, Noruega.', en: 'Debater at The Critical Room, Films from the South film festival, Oslo, Norway.' } },
+        { year: '2003', title: { pt: 'Festival CinePE, Recife', en: 'CinePE Festival, Recife' }, description: { pt: 'Membro do júri de curtas-metragens do Festival de Cinema CinePE.', en: 'Short film jury member at the CinePE Film Festival.' } },
       ],
     },
-    formativas: {
-      title: { pt: 'Ações Formativas', en: 'Training & Education' },
+    formacao: {
+      title: { pt: 'Formação', en: 'Teaching' },
       subtitle: {
-        pt: '+20 anos de atuação em projetos de cursos e oficinas de audiovisual, em especial de roteiro para audiovisual expandido, produções colaborativas, interativas e imersivas - como professora e/ou gestora.',
-        en: '20+ years in audiovisual courses and workshops, especially screenwriting for expanded audiovisual, collaborative, interactive and immersive productions — as instructor and/or manager.',
+        pt: '+20 anos como professora e gestora de cursos e oficinas de audiovisual, roteiro para audiovisual expandido, produções colaborativas, interativas e imersivas.',
+        en: '20+ years as instructor and manager of audiovisual courses and workshops, screenwriting for expanded audiovisual, collaborative, interactive and immersive productions.',
       },
       items: [
-        {
-          year: '2024–',
-          title: { pt: 'Plural MJ — Comunicação Estratégica', en: 'Plural MJ — Strategic Communication' },
-          description: {
-            pt: 'Desenvolvimento de treinamentos, projetos e consultorias pela Plural MJ — comunicação estratégica e storytelling.',
-            en: 'Training, project development and consulting through Plural MJ — strategic communication and storytelling.',
-          },
-        },
-        {
-          year: '2021–',
-          title: { pt: 'ONG Luta pela Paz', en: 'Fight for Peace NGO' },
-          description: {
-            pt: 'Gestão em comunicação e audiovisual na ONG Luta pela Paz.',
-            en: 'Communications and audiovisual management at Fight for Peace NGO.',
-          },
-        },
-        {
-          year: '2021–2022',
-          title: { pt: 'CAPES Print — Concordia University, Montreal', en: 'CAPES Print Fellowship — Concordia University, Montreal' },
-          description: {
-            pt: 'Bolsista CAPES Print no Centre for Oral History and Digital Storytelling na Concordia University — pesquisa em história oral e narrativas digitais.',
-            en: 'CAPES Print fellow at the Centre for Oral History and Digital Storytelling at Concordia University — research in oral history and digital narratives.',
-          },
-        },
-        {
-          year: '2019–',
-          title: { pt: 'Pós-Graduação em Cinema Documentário (FGV)', en: 'Graduate Program in Documentary Film (FGV)' },
-          description: {
-            pt: 'Professora da Pós-Graduação em Cinema Documentário (FGV) — disciplina "Mídias Digitais e Novas Janelas do Documentário".',
-            en: 'Professor at the Graduate Program in Documentary Film (FGV) — course "Digital Media and New Windows for Documentary".',
-          },
-        },
-        {
-          year: '2018',
-          title: { pt: 'MBA em Gestão Cultural (FGV)', en: 'MBA in Cultural Management (FGV)' },
-          description: {
-            pt: 'Professora do MBA em Gestão Cultural da FGV — disciplina "Metodologia de pesquisa qualitativa aplicada a projetos culturais".',
-            en: 'Professor at the FGV MBA in Cultural Management — course "Qualitative research methodology applied to cultural projects".',
-          },
-        },
-        {
-          year: '2016',
-          title: { pt: 'Naves do Conhecimento', en: 'Naves do Conhecimento' },
-          description: {
-            pt: 'Curso de audiovisual nas Naves do Conhecimento — roteiro e interatividade.',
-            en: 'Audiovisual course at Naves do Conhecimento — screenwriting and interactivity.',
-          },
-        },
-        {
-          year: '2014–2016',
-          title: { pt: 'Workshops GIZ', en: 'GIZ Workshops' },
-          description: {
-            pt: 'Consultoria workshops em comunidades periféricas (GIZ) — educação e engajamento social.',
-            en: 'Workshop consulting in peripheral communities (GIZ) — education and social engagement.',
-          },
-        },
-        {
-          year: '2003–2013',
-          title: { pt: 'Viva Rio — Comunicadores Comunitários', en: 'Viva Rio — Community Communicators' },
-          description: {
-            pt: 'Formação de comunicadores comunitários no Viva Rio — coordenação de projeto e desenvolvimento de metodologias e produtos colaborativos (Viva Favela 2.0).',
-            en: 'Training community communicators at Viva Rio — project coordination and development of collaborative methodologies and products (Viva Favela 2.0).',
-          },
-        },
-        {
-          year: '2013–2019',
-          title: { pt: 'Instituto Igarapé', en: 'Igarapé Institute' },
-          description: {
-            pt: 'Consultora sênior de comunicação e mídias digitais no Instituto Igarapé.',
-            en: 'Senior consultant in communications and digital media at the Igarapé Institute.',
-          },
-        },
-        {
-          year: '2013–2021',
-          title: { pt: 'Cria Media Lab', en: 'Cria Media Lab' },
-          description: {
-            pt: 'Sócia fundadora e diretora de projetos de pesquisa, formação e audiovisual.',
-            en: 'Co-founder and director of research, training and audiovisual projects.',
-          },
-        },
-        {
-          year: '1998–1999',
-          title: { pt: 'Infoglobo (O Globo)', en: 'Infoglobo (O Globo)' },
-          description: {
-            pt: 'Repórter e produtora de conteúdo na Infoglobo (O Globo e Globo Online).',
-            en: 'Reporter and content producer at Infoglobo (O Globo and Globo Online).',
-          },
-        },
-        {
-          year: '1994–1995',
-          title: { pt: 'Circo Voador — TVCV', en: 'Circo Voador — TVCV' },
-          description: {
-            pt: 'Produtora no Circo Voador, diretora de episódios da "zine eletrônica" TVCV exibida no telão antes dos shows.',
-            en: 'Producer at Circo Voador, director of episodes of the "electronic zine" TVCV screened before live shows.',
-          },
-        },
+        { year: '2019–', title: { pt: 'Pós-Graduação em Cinema Documentário (FGV)', en: 'Graduate Program in Documentary Film (FGV)' }, description: { pt: 'Professora da Pós-Graduação em Cinema Documentário (FGV) — disciplina "Mídias Digitais e Novas Janelas do Documentário".', en: 'Professor at the Graduate Program in Documentary Film (FGV) — course "Digital Media and New Windows for Documentary".' } },
+        { year: '2018', title: { pt: 'MBA em Gestão Cultural (FGV)', en: 'MBA in Cultural Management (FGV)' }, description: { pt: 'Professora do MBA em Gestão Cultural da FGV — disciplina "Metodologia de pesquisa qualitativa aplicada a projetos culturais".', en: 'Professor at the FGV MBA in Cultural Management — course "Qualitative research methodology applied to cultural projects".' } },
+        { year: '2016', title: { pt: 'Naves do Conhecimento', en: 'Naves do Conhecimento' }, description: { pt: 'Curso de audiovisual nas Naves do Conhecimento — roteiro e interatividade.', en: 'Audiovisual course at Naves do Conhecimento — screenwriting and interactivity.' } },
+        { year: '2014–2016', title: { pt: 'Workshops GIZ', en: 'GIZ Workshops' }, description: { pt: 'Consultoria workshops em comunidades periféricas (GIZ) — educação e engajamento social.', en: 'Workshop consulting in peripheral communities (GIZ) — education and social engagement.' } },
+        { year: '2003–2013', title: { pt: 'Viva Rio — Comunicadores Comunitários', en: 'Viva Rio — Community Communicators' }, description: { pt: 'Formação de comunicadores comunitários no Viva Rio — coordenação de projeto e desenvolvimento de metodologias e produtos colaborativos (Viva Favela 2.0).', en: 'Training community communicators at Viva Rio — project coordination and development of collaborative methodologies and products (Viva Favela 2.0).' } },
+      ],
+    },
+    trajetoria: {
+      title: { pt: 'Trajetória', en: 'Career' },
+      subtitle: {
+        pt: '+30 anos de atuação profissional em comunicação, cultura e terceiro setor.',
+        en: '30+ years of professional experience in communication, culture and the nonprofit sector.',
+      },
+      items: [
+        { year: '2024–', title: { pt: 'Plural MJ', en: 'Plural MJ' }, description: { pt: 'Fundadora. Consultoria e treinamentos em comunicação estratégica, gestão de projetos de pesquisa e produção audiovisual e editorial.', en: 'Founder. Consulting and training in strategic communication, research project management and audiovisual/editorial production.' } },
+        { year: '2021–', title: { pt: 'ONG Luta pela Paz', en: 'Fight for Peace NGO' }, description: { pt: 'Consultora (2021–2022) e gerente (2023–) de comunicação e marketing.', en: 'Consultant (2021–2022) and manager (2023–) of communications and marketing.' } },
+        { year: '2021–2022', title: { pt: 'CAPES Print — Concordia University, Montreal', en: 'CAPES Print Fellowship — Concordia University, Montreal' }, description: { pt: 'Bolsista CAPES Print no Centre for Oral History and Digital Storytelling na Concordia University — pesquisa em história oral e narrativas digitais.', en: 'CAPES Print fellow at the Centre for Oral History and Digital Storytelling at Concordia University — research in oral history and digital narratives.' } },
+        { year: '2013–2021', title: { pt: 'Cria Media Lab', en: 'Cria Media Lab' }, description: { pt: 'Sócia fundadora e diretora de projetos de pesquisa, formação e audiovisual.', en: 'Co-founder and director of research, training and audiovisual projects.' } },
+        { year: '2013–2019', title: { pt: 'Instituto Igarapé', en: 'Igarapé Institute' }, description: { pt: 'Consultora sênior de comunicação e mídias digitais.', en: 'Senior consultant in communications and digital media.' } },
+        { year: '2003–2013', title: { pt: 'Viva Rio', en: 'Viva Rio' }, description: { pt: 'Coordenadora de projetos de mídia digital e audiovisual, com destaque para o Viva Favela 2.0.', en: 'Digital media and audiovisual project coordinator, notably Viva Favela 2.0.' } },
+        { year: '1998–1999', title: { pt: 'Infoglobo (O Globo)', en: 'Infoglobo (O Globo)' }, description: { pt: 'Repórter e produtora de conteúdo na Infoglobo (O Globo e Globo Online).', en: 'Reporter and content producer at Infoglobo (O Globo and Globo Online).' } },
+        { year: '1994–1995', title: { pt: 'Circo Voador — TVCV', en: 'Circo Voador — TVCV' }, description: { pt: 'Produtora no Circo Voador, diretora de episódios da "zine eletrônica" TVCV exibida no telão antes dos shows.', en: 'Producer at Circo Voador, director of episodes of the "electronic zine" TVCV screened before live shows.' } },
       ],
     },
   },
@@ -639,10 +298,6 @@ export const siteContent = {
       pt: 'Plural MJ LTDA. Todos os direitos reservados.',
       en: 'Plural MJ LTDA. All rights reserved.',
     },
-  },
-  photoPlaceholder: {
-    pt: 'Foto de Mayra Jucá',
-    en: 'Photo of Mayra Jucá',
   },
 };
 
