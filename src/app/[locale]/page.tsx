@@ -2,6 +2,7 @@
 // ABOUTME: Entry point for the portfolio site, locale-aware.
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { type Locale, siteContent, t } from '@/config/content';
 
 const heroLabel = { pt: 'Portfólio', en: 'Portfolio' };
@@ -87,8 +88,15 @@ export default async function HomePage({
       <section className="py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="aspect-[3/4] bg-accent rounded-lg flex items-center justify-center text-text-muted">
-              <span className="text-sm">{t(siteContent.photoPlaceholder, locale)}</span>
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+              <Image
+                src="/images/mayra-juca.jpg"
+                alt="Mayra Jucá"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
             <div>
               <p className="text-lg leading-relaxed text-text-light mb-6">

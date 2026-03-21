@@ -1,6 +1,7 @@
 // ABOUTME: Dedicated page for the book "O Super-8 no AI-5".
 // ABOUTME: Displays book details, endorsements, launch events, and purchase info.
 
+import Image from 'next/image';
 import { type Locale, siteContent, t } from '@/config/content';
 
 export const metadata = {
@@ -38,14 +39,19 @@ export default async function BookPage({
         </div>
       </section>
 
-      {/* Book cover placeholder + description */}
+      {/* Book cover + description */}
       <section className="py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="aspect-[3/4] bg-accent rounded-lg flex items-center justify-center text-text-muted">
-              <span className="text-sm">
-                {locale === 'pt' ? 'Capa do livro' : 'Book cover'}
-              </span>
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/super8-ai5-capa.jpg"
+                alt="O Super-8 no AI-5 — capa do livro"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
             <div>
               <p className="text-lg leading-relaxed text-text-light mb-8">
@@ -65,6 +71,15 @@ export default async function BookPage({
           <h2 className="font-heading font-black text-2xl sm:text-4xl uppercase tracking-tight text-center mb-12">
             {t(book.launchesTitle, locale)}
           </h2>
+          <div className="relative aspect-video rounded-lg overflow-hidden shadow-md mb-10">
+            <Image
+              src="/images/super8-bienal-rio.png"
+              alt="O Super-8 no AI-5 — Bienal do Livro Rio 2025"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 672px"
+            />
+          </div>
           <div className="space-y-6">
             {book.launches.map((launch, i) => (
               <div
@@ -103,6 +118,41 @@ export default async function BookPage({
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Film stills gallery */}
+      <section className="py-16 sm:py-24 bg-surface">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="relative aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/images/pira-sergio-peo.jpg"
+                alt="Pira, filme de Sérgio Péo"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+            </div>
+            <div className="relative aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/images/super8-film-still.png"
+                alt="Still de filme Super-8"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+            </div>
+            <div className="relative aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/images/super8-graffiti.png"
+                alt="Arte urbana dos anos 1970"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </section>
