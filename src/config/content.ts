@@ -121,9 +121,56 @@ export const siteContent = {
       },
       {
         date: { pt: '16 de agosto de 2025', en: 'August 16, 2025' },
-        location: { pt: 'Soberano Bar-museu, São Paulo — Festival Super-OFF', en: 'Soberano Bar-museu, São Paulo — Festival Super-OFF' },
+        location: { pt: 'Soberano Bar-museu, São Paulo — 12º Festival Super-OFF', en: 'Soberano Bar-museu, São Paulo — 12th Festival Super-OFF' },
+      },
+      {
+        date: { pt: '30 de setembro a 3 de outubro de 2025', en: 'September 30 – October 3, 2025' },
+        location: { pt: 'XXVIII Encontro SOCINE, Universidade Federal do Pará, Belém', en: 'XXVIII SOCINE Conference, Federal University of Pará, Belém' },
+      },
+      {
+        date: { pt: '6 de novembro de 2025', en: 'November 6, 2025' },
+        location: { pt: 'IESP-UERJ, Rio de Janeiro — palestra e debate', en: 'IESP-UERJ, Rio de Janeiro — talk and debate' },
       },
     ],
+    press: [
+      {
+        outlet: 'O Globo',
+        author: 'Ancelmo Góis',
+        title: {
+          pt: 'Bienal: Jornalista lança livro sobre a importância das câmeras Super-8 para retratar a juventude dos anos 1970',
+          en: 'Biennial: Journalist launches book on the importance of Super-8 cameras for portraying 1970s youth',
+        },
+      },
+      {
+        outlet: 'Associação Brasileira de Imprensa',
+        title: {
+          pt: 'Bienal: Jornalista lança livro sobre a importância das câmeras Super-8 para retratar a juventude dos anos 1970',
+          en: 'Biennial: Journalist launches book on the importance of Super-8 cameras for portraying 1970s youth',
+        },
+      },
+      {
+        outlet: 'Rádio Roquette Pinto',
+        title: {
+          pt: 'Mayra Jucá lança livro sobre cinema e juventude nos anos 1970',
+          en: 'Mayra Jucá launches book on cinema and youth in the 1970s',
+        },
+      },
+      {
+        outlet: 'Jornal do Commercio',
+        title: {
+          pt: 'Cinema e juventude contra a ditadura',
+          en: 'Cinema and youth against the dictatorship',
+        },
+      },
+      {
+        outlet: 'TV Liberal (Bom Dia Pará)',
+        title: {
+          pt: 'Entrevista ao vivo — Encontro SOCINE, Belém',
+          en: 'Live interview — SOCINE Conference, Belém',
+        },
+      },
+    ],
+    pressTitle: { pt: 'Na Imprensa', en: 'Press Coverage' },
     endorsements: [
       {
         name: 'Rubens Machado Jr.',
@@ -336,6 +383,38 @@ export const siteContent = {
           description: {
             pt: 'Comentarista convidada.',
             en: 'Guest commentator.',
+          },
+        },
+        {
+          year: '2025',
+          title: { pt: 'XXVIII Encontro SOCINE, Belém', en: 'XXVIII SOCINE Conference, Belém' },
+          description: {
+            pt: 'Palestra e debate no XXVIII Encontro SOCINE na Universidade Federal do Pará (30 de setembro a 3 de outubro). Lançamento do livro O Super-8 no AI-5. Entrevista ao vivo para TV Liberal, programa Bom Dia Pará (3 de outubro).',
+            en: 'Talk and debate at the XXVIII SOCINE Conference at the Federal University of Pará (September 30 – October 3). Book launch of O Super-8 no AI-5. Live interview on TV Liberal, Bom Dia Pará program (October 3).',
+          },
+        },
+        {
+          year: '2025',
+          title: { pt: 'IESP-UERJ, Rio de Janeiro', en: 'IESP-UERJ, Rio de Janeiro' },
+          description: {
+            pt: 'Palestra e debate sobre o livro O Super-8 no AI-5 no IESP-UERJ (6 de novembro), durante aula aberta da disciplina "Imagens e Pesquisas em Ciências Sociais", coordenada por Mariana Cavalcanti.',
+            en: 'Talk and debate on the book O Super-8 no AI-5 at IESP-UERJ (November 6), during an open class of "Images and Research in Social Sciences", coordinated by Mariana Cavalcanti.',
+          },
+        },
+        {
+          year: '2025',
+          title: { pt: '12º Festival Super-OFF, São Paulo', en: '12th Festival Super-OFF, São Paulo' },
+          description: {
+            pt: 'Palestra e debate no 12º Festival Internacional de Cinema Super 8, com lançamento do livro O Super-8 no AI-5 no Soberano Bar-museu (16 de agosto).',
+            en: 'Talk and debate at the 12th International Super 8 Film Festival, with book launch of O Super-8 no AI-5 at Soberano Bar-museu (August 16).',
+          },
+        },
+        {
+          year: '2025',
+          title: { pt: 'Mostra Cavídeo 28 anos, Estação Net Rio', en: 'Mostra Cavídeo 28th Anniversary, Estação Net Rio' },
+          description: {
+            pt: 'Sessão de autógrafos do livro O Super-8 no AI-5 na Lojinha Cavídeo, Estação Net Rio, Rua Voluntários da Pátria 35, Botafogo (8 de agosto).',
+            en: 'Book signing of O Super-8 no AI-5 at Lojinha Cavídeo, Estação Net Rio, Rua Voluntários da Pátria 35, Botafogo (August 8).',
           },
         },
         {

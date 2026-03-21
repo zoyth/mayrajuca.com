@@ -122,6 +122,35 @@ export default async function BookPage({
         </div>
       </section>
 
+      {/* Press coverage */}
+      <section className="py-16 sm:py-24 bg-surface">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading font-black text-2xl sm:text-4xl uppercase tracking-tight text-center mb-12">
+            {t(book.pressTitle, locale)}
+          </h2>
+          <div className="space-y-4">
+            {book.press.map((item, i) => (
+              <div
+                key={i}
+                className="bg-white p-5 rounded-lg shadow-sm flex flex-col sm:flex-row sm:items-center gap-3"
+              >
+                <span className="flex-shrink-0 bg-primary text-white font-heading font-bold text-xs uppercase px-3 py-1.5 tracking-wide rounded">
+                  {item.outlet}
+                </span>
+                <div className="flex-1">
+                  <p className="text-text-light text-sm leading-relaxed">
+                    {t(item.title, locale)}
+                  </p>
+                  {'author' in item && item.author && (
+                    <p className="text-text-muted text-xs mt-1">{item.author}</p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Film stills gallery */}
       <section className="py-16 sm:py-24 bg-surface">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
