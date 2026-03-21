@@ -39,9 +39,42 @@ export const siteContent = {
       en: 'Mayra Jucá holds a PhD and a Master\'s degree in History, Politics and Cultural Heritage from CPDOC/FGV. In 2026, she began her Post-Doctoral research at the Graduate Program in Film and Audiovisual at UFF (Universidade Federal Fluminense), focusing on experimental cinema, the history of non-canonical Brazilian cinema and the filmography of the Super-8 movement in Rio de Janeiro.',
     },
     bioExtended: {
-      pt: 'Entre 2021 e 2022, foi bolsista CAPES Print no Centre for Oral History and Digital Storytelling na Concordia University, em Montreal. Sua atuação é marcada por uma abordagem multidisciplinar e pelo uso da história oral e do audiovisual a serviço de causas sociais e pesquisas nos campos da cultura e da política.',
-      en: 'Between 2021 and 2022, she was a CAPES Print fellow at the Centre for Oral History and Digital Storytelling at Concordia University in Montreal. Her work is characterized by a multidisciplinary approach and the use of oral history and audiovisual media in service of social causes and research in the fields of culture and politics.',
+      pt: 'Entre 2021 e 2022, foi bolsista CAPES Print no Centre for Oral History and Digital Storytelling na Concordia University, em Montreal, onde permanece como pesquisadora afiliada. É integrante do Laboratório de Estudos da Cultura Visual do CPDOC/FGV e membro da rede de pesquisa BUG 404 sobre narrativas interativas. Sua atuação é marcada por uma abordagem multidisciplinar e pelo uso da história oral e do audiovisual a serviço de causas sociais e pesquisas nos campos da cultura e da política.',
+      en: 'Between 2021 and 2022, she was a CAPES Print fellow at the Centre for Oral History and Digital Storytelling at Concordia University in Montreal, where she remains an affiliated researcher. She is a member of the Visual Culture Studies Lab at CPDOC/FGV and of the BUG 404 research network on interactive narratives. Her work is characterized by a multidisciplinary approach and the use of oral history and audiovisual media in service of social causes and research in the fields of culture and politics.',
     },
+    education: [
+      {
+        degree: { pt: 'Doutorado em História, Política e Bens Culturais', en: 'PhD in History, Politics and Cultural Heritage' },
+        institution: 'CPDOC / Fundação Getúlio Vargas',
+        year: '2024',
+        thesis: {
+          pt: 'Tomadas da cidade em pleno AI-5: "Pira" e o superoitismo experimental urbano',
+          en: 'City takes under AI-5: "Pira" and experimental urban Super-8 filmmaking',
+        },
+      },
+      {
+        degree: { pt: 'Mestrado em Bens Culturais e Projetos Sociais', en: 'Master\'s in Cultural Heritage and Social Projects' },
+        institution: 'CPDOC / Fundação Getúlio Vargas',
+        year: '2014',
+        thesis: {
+          pt: 'Vozes ativas das favelas 2.0: autorrepresentações midiáticas numa rede de comunicadores periféricos',
+          en: 'Active voices from the favelas 2.0: media self-representations in a network of peripheral communicators',
+        },
+      },
+      {
+        degree: { pt: 'Bacharelado em Comunicação Social (Rádio e TV)', en: 'Bachelor\'s in Social Communication (Radio & TV)' },
+        institution: { pt: 'Escola de Comunicação da UFRJ', en: 'UFRJ School of Communication' },
+        year: '1997',
+      },
+    ],
+    languages: [
+      { lang: { pt: 'Português', en: 'Portuguese' }, level: { pt: 'Nativo', en: 'Native' } },
+      { lang: { pt: 'Inglês', en: 'English' }, level: { pt: 'Fluente (IELTS Academic)', en: 'Fluent (IELTS Academic)' } },
+      { lang: { pt: 'Espanhol', en: 'Spanish' }, level: { pt: 'Avançado', en: 'Advanced' } },
+      { lang: { pt: 'Francês', en: 'French' }, level: { pt: 'Intermediário', en: 'Intermediate' } },
+    ],
+    educationTitle: { pt: 'Formação Acadêmica', en: 'Education' },
+    languagesTitle: { pt: 'Idiomas', en: 'Languages' },
   },
   nav: {
     home: { pt: 'Início', en: 'Home' },
@@ -361,6 +394,14 @@ export const siteContent = {
           },
         },
         {
+          year: '',
+          title: { pt: 'Um Outro Brasil', en: 'Um Outro Brasil (Another Brazil)' },
+          description: {
+            pt: 'Assistente de direção do documentário Um Outro Brasil, dirigido por Sérgio Goldenberg no Centro de Criação de Imagem Popular (CECIP).',
+            en: 'Assistant director on the documentary Um Outro Brasil, directed by Sérgio Goldenberg at the Centro de Criação de Imagem Popular (CECIP).',
+          },
+        },
+        {
           year: '1994',
           title: { pt: 'Túnel', en: 'Túnel (Tunnel)' },
           description: {
@@ -441,6 +482,38 @@ export const siteContent = {
             en: 'Guest exhibitor, UFRJ School of Communication.',
           },
         },
+        {
+          year: '2019',
+          title: { pt: 'ANPUH — Simpósio Nacional de História, Recife', en: 'ANPUH — National History Symposium, Recife' },
+          description: {
+            pt: 'Comunicação no Simpósio Temático "Arte e Cultura na Ditadura Militar". Tema: "Pira e o Super 8 como prática de resistência política".',
+            en: 'Presentation at the thematic symposium "Art and Culture during the Military Dictatorship". Topic: "Pira and Super 8 as a practice of political resistance".',
+          },
+        },
+        {
+          year: '2019',
+          title: { pt: 'CPDOC-FGV e IED-Rio', en: 'CPDOC-FGV and IED-Rio' },
+          description: {
+            pt: 'Palestras sobre mídias digitais e o documentário interativo (CPDOC-FGV, dezembro) e documentários interativos (IED-Rio, setembro).',
+            en: 'Lectures on digital media and interactive documentary (CPDOC-FGV, December) and interactive documentaries (IED-Rio, September).',
+          },
+        },
+        {
+          year: '2011',
+          title: { pt: 'Films from the South, Oslo', en: 'Films from the South, Oslo' },
+          description: {
+            pt: 'Debatedora no The Critical Room, festival de cinema Films from the South, Oslo, Noruega.',
+            en: 'Debater at The Critical Room, Films from the South film festival, Oslo, Norway.',
+          },
+        },
+        {
+          year: '2003',
+          title: { pt: 'Festival CinePE, Recife', en: 'CinePE Festival, Recife' },
+          description: {
+            pt: 'Membro do júri de curtas-metragens do Festival de Cinema CinePE.',
+            en: 'Short film jury member at the CinePE Film Festival.',
+          },
+        },
       ],
     },
     formativas: {
@@ -478,8 +551,16 @@ export const siteContent = {
           year: '2019–',
           title: { pt: 'Pós-Graduação em Cinema Documentário (FGV)', en: 'Graduate Program in Documentary Film (FGV)' },
           description: {
-            pt: 'Professora da Pós-Graduação em Cinema Documentário (FGV) — mídias digitais e inovação.',
-            en: 'Professor at the Graduate Program in Documentary Film (FGV) — digital media and innovation.',
+            pt: 'Professora da Pós-Graduação em Cinema Documentário (FGV) — disciplina "Mídias Digitais e Novas Janelas do Documentário".',
+            en: 'Professor at the Graduate Program in Documentary Film (FGV) — course "Digital Media and New Windows for Documentary".',
+          },
+        },
+        {
+          year: '2018',
+          title: { pt: 'MBA em Gestão Cultural (FGV)', en: 'MBA in Cultural Management (FGV)' },
+          description: {
+            pt: 'Professora do MBA em Gestão Cultural da FGV — disciplina "Metodologia de pesquisa qualitativa aplicada a projetos culturais".',
+            en: 'Professor at the FGV MBA in Cultural Management — course "Qualitative research methodology applied to cultural projects".',
           },
         },
         {
@@ -504,6 +585,38 @@ export const siteContent = {
           description: {
             pt: 'Formação de comunicadores comunitários no Viva Rio — coordenação de projeto e desenvolvimento de metodologias e produtos colaborativos (Viva Favela 2.0).',
             en: 'Training community communicators at Viva Rio — project coordination and development of collaborative methodologies and products (Viva Favela 2.0).',
+          },
+        },
+        {
+          year: '2013–2019',
+          title: { pt: 'Instituto Igarapé', en: 'Igarapé Institute' },
+          description: {
+            pt: 'Consultora sênior de comunicação e mídias digitais no Instituto Igarapé.',
+            en: 'Senior consultant in communications and digital media at the Igarapé Institute.',
+          },
+        },
+        {
+          year: '2013–2021',
+          title: { pt: 'Cria Media Lab', en: 'Cria Media Lab' },
+          description: {
+            pt: 'Sócia fundadora e diretora de projetos de pesquisa, formação e audiovisual.',
+            en: 'Co-founder and director of research, training and audiovisual projects.',
+          },
+        },
+        {
+          year: '1998–1999',
+          title: { pt: 'Infoglobo (O Globo)', en: 'Infoglobo (O Globo)' },
+          description: {
+            pt: 'Repórter e produtora de conteúdo na Infoglobo (O Globo e Globo Online).',
+            en: 'Reporter and content producer at Infoglobo (O Globo and Globo Online).',
+          },
+        },
+        {
+          year: '1994–1995',
+          title: { pt: 'Circo Voador — TVCV', en: 'Circo Voador — TVCV' },
+          description: {
+            pt: 'Produtora no Circo Voador, diretora de episódios da "zine eletrônica" TVCV exibida no telão antes dos shows.',
+            en: 'Producer at Circo Voador, director of episodes of the "electronic zine" TVCV screened before live shows.',
           },
         },
       ],

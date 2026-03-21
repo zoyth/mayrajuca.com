@@ -110,6 +110,49 @@ export default async function HomePage({
         </div>
       </section>
 
+      {/* Education + Languages */}
+      <section className="py-16 sm:py-24 bg-surface">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="font-heading font-bold text-xl uppercase tracking-tight mb-6">
+                {t(siteContent.about.educationTitle, locale)}
+              </h2>
+              <div className="space-y-6">
+                {siteContent.about.education.map((edu, i) => (
+                  <div key={i}>
+                    <p className="font-heading font-bold">
+                      {t(edu.degree, locale)}
+                    </p>
+                    <p className="text-text-light text-sm">
+                      {typeof edu.institution === 'string' ? edu.institution : t(edu.institution, locale)} · {edu.year}
+                    </p>
+                    {'thesis' in edu && edu.thesis && (
+                      <p className="text-text-muted text-sm italic mt-1">
+                        {t(edu.thesis, locale)}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h2 className="font-heading font-bold text-xl uppercase tracking-tight mb-6">
+                {t(siteContent.about.languagesTitle, locale)}
+              </h2>
+              <div className="space-y-3">
+                {siteContent.about.languages.map((lang, i) => (
+                  <div key={i} className="flex justify-between items-baseline">
+                    <span className="font-medium">{t(lang.lang, locale)}</span>
+                    <span className="text-text-muted text-sm">{t(lang.level, locale)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Sections Overview */}
       <section className="py-16 sm:py-24 bg-accent">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
