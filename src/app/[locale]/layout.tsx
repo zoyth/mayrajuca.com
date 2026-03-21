@@ -120,6 +120,16 @@ export default async function LocaleLayout({
                       @Mayra_Juca
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/mayrajuca"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-100"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -39,8 +39,8 @@ export const siteContent = {
       en: 'Mayra Jucá holds a PhD and a Master\'s degree in History, Politics and Cultural Heritage from CPDOC/FGV. In 2026, she began her Post-Doctoral research at the Graduate Program in Film and Audiovisual at UFF (Universidade Federal Fluminense), focusing on experimental cinema, the history of non-canonical Brazilian cinema and the filmography of the Super-8 movement in Rio de Janeiro.',
     },
     bioExtended: {
-      pt: 'Sua atuação é marcada por uma abordagem multidisciplinar e pelo uso da história oral e do audiovisual a serviço de causas sociais e pesquisas nos campos da cultura e da política.',
-      en: 'Her work is characterized by a multidisciplinary approach and the use of oral history and audiovisual media in service of social causes and research in the fields of culture and politics.',
+      pt: 'Entre 2021 e 2022, foi bolsista CAPES Print no Centre for Oral History and Digital Storytelling na Concordia University, em Montreal. Sua atuação é marcada por uma abordagem multidisciplinar e pelo uso da história oral e do audiovisual a serviço de causas sociais e pesquisas nos campos da cultura e da política.',
+      en: 'Between 2021 and 2022, she was a CAPES Print fellow at the Centre for Oral History and Digital Storytelling at Concordia University in Montreal. Her work is characterized by a multidisciplinary approach and the use of oral history and audiovisual media in service of social causes and research in the fields of culture and politics.',
     },
   },
   nav: {
@@ -72,8 +72,8 @@ export const siteContent = {
           year: '2025',
           title: { pt: 'O Super-8 no AI-5', en: 'O Super-8 no AI-5' },
           description: {
-            pt: 'Autora do livro O Super-8 no AI-5, pela editora Letra Capital.',
-            en: 'Author of the book O Super-8 no AI-5, published by Letra Capital.',
+            pt: 'Autora do livro O Super-8 no AI-5: memórias de cinema e juventude na década de 1970, pela editora Letra Capital. O trabalho combina pesquisa fílmica, análise documental, bibliografia e entrevistas, utilizando conteúdo audiovisual como ferramenta de ativação de memória das experiências juvenis durante os anos da ditadura militar. Lançado na Bienal do Livro do Rio de Janeiro em junho de 2025. Endossado por Rubens Machado Jr. (ECA-USP), Mariana Cavalcanti (IESP-UERJ), Thaís Blank (FGV-CPDOC) e Patrícia Machado (PUC-Rio).',
+            en: 'Author of O Super-8 no AI-5: memories of cinema and youth in the 1970s, published by Letra Capital. The work combines film research, documentary analysis, bibliography and interviews, using audiovisual content as a memory activation tool for youth experiences during Brazil\'s military dictatorship years. Launched at the Rio de Janeiro Book Biennial in June 2025. Endorsed by Rubens Machado Jr. (ECA-USP), Mariana Cavalcanti (IESP-UERJ), Thaís Blank (FGV-CPDOC) and Patrícia Machado (PUC-Rio).',
           },
         },
         {
@@ -125,6 +125,14 @@ export const siteContent = {
         en: '20+ years designing audiovisual, cultural and research projects and events for educational institutions and nonprofit organizations.',
       },
       items: [
+        {
+          year: '2025',
+          title: { pt: 'Lançamentos do livro O Super-8 no AI-5', en: 'Book launches: O Super-8 no AI-5' },
+          description: {
+            pt: 'Lançamento na Bienal do Livro do Rio de Janeiro (15 de junho); sessão de autógrafos na Estação Net Rio, Botafogo (8 de agosto); lançamento em São Paulo no Soberano Bar-museu durante o Festival Super-OFF (16 de agosto).',
+            en: 'Launch at the Rio de Janeiro Book Biennial (June 15); book signing at Estação Net Rio cinema, Botafogo (August 8); São Paulo launch at Soberano Bar-museu during Festival Super-OFF (August 16).',
+          },
+        },
         {
           year: '2025',
           title: { pt: 'Olhares Negros, Museu de Arte do Rio', en: 'Olhares Negros, Rio Art Museum' },
@@ -281,6 +289,14 @@ export const siteContent = {
           },
         },
         {
+          year: '2021–2022',
+          title: { pt: 'CAPES Print — Concordia University, Montreal', en: 'CAPES Print Fellowship — Concordia University, Montreal' },
+          description: {
+            pt: 'Bolsista CAPES Print no Centre for Oral History and Digital Storytelling na Concordia University — pesquisa em história oral e narrativas digitais.',
+            en: 'CAPES Print fellow at the Centre for Oral History and Digital Storytelling at Concordia University — research in oral history and digital narratives.',
+          },
+        },
+        {
           year: '2019–',
           title: { pt: 'Pós-Graduação em Cinema Documentário (FGV)', en: 'Graduate Program in Documentary Film (FGV)' },
           description: {
@@ -320,6 +336,7 @@ export const siteContent = {
     email: 'mayrajuca@gmail.com',
     youtube: 'https://www.youtube.com/@mayrajuca_Plural',
     instagram: '@Mayra_Juca',
+    linkedin: 'mayrajuca',
     phone: '21 98186-1010',
     website: 'www.mayrajuca.com/plural',
   },

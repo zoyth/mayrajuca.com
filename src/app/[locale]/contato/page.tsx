@@ -33,6 +33,12 @@ const contactItems = [
     external: true,
   },
   {
+    label: { pt: 'LinkedIn', en: 'LinkedIn' },
+    value: siteContent.contact.linkedin,
+    href: `https://www.linkedin.com/in/${siteContent.contact.linkedin}`,
+    external: true,
+  },
+  {
     label: phoneLabel,
     value: siteContent.contact.phone,
     href: `tel:+55${siteContent.contact.phone.replace(/\s/g, '')}`,
