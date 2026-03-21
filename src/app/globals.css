@@ -1,0 +1,35 @@
+/* ABOUTME: Global styles for the Mayra Jucá portfolio site. */
+/* ABOUTME: Imports Tailwind and defines custom fonts and base styles. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700;900&display=swap');
+
+@import "tailwindcss";
+
+@source "../../node_modules/@zoyth/simple-site-framework/dist/**/*.{js,mjs}";
+
+@theme {
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-primary: #D97706;
+  --color-primary-light: #F59E0B;
+  --color-primary-dark: #B45309;
+  --color-accent: #D4C4B0;
+  --color-accent-light: #E8DDD0;
+  --color-accent-dark: #B8A48E;
+  --color-background: #FFFFFF;
+  --color-surface: #F5F5F5;
+  --color-text: #1A1A1A;
+  --color-text-light: #4A4A4A;
+  --color-text-muted: #7A7A7A;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
