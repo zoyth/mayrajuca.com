@@ -60,6 +60,40 @@ export const siteContent = {
     pt: 'Ver mais →',
     en: 'See more →',
   },
+  article: {
+    title: {
+      pt: 'Sobre compartilhar histórias e o desafio criativo de mantê-las vivas',
+      en: 'On sharing stories and the creative challenge of keeping them alive',
+    },
+    subtitle: {
+      pt: 'Entrevista com Steven High, fundador do Centre for Oral History and Digital Storytelling na Concordia University, em Montreal',
+      en: 'Interview with Steven High, founder of the Centre for Oral History and Digital Storytelling at Concordia University, Montreal',
+    },
+    author: 'Mayra Coelho Jucá dos Santos',
+    authorAffiliation: 'Fundação Getúlio Vargas / CPDOC',
+    journal: 'História Oral',
+    volume: '25',
+    issue: '2',
+    year: '2022',
+    pages: '223–238',
+    section: { pt: 'Entrevistas', en: 'Interviews' },
+    publishedDate: { pt: '15 de dezembro de 2022', en: 'December 15, 2022' },
+    doi: '10.51880/ho.v25i2.1300',
+    issn: '2358-1654',
+    license: 'Creative Commons BY-NC-ND 4.0',
+    keywords: {
+      pt: ['Steven High', 'COHDS', 'Montreal Life Stories', 'Pesquisa-criação', 'Narrativas digitais', 'Autoridade compartilhada'],
+      en: ['Steven High', 'COHDS', 'Montreal Life Stories', 'Research-creation', 'Digital narratives', 'Shared authority'],
+    },
+    abstract: {
+      pt: 'Entrevista com o historiador oral canadense Steven High, autor de diversos livros premiados e fundador do Centre for Oral History and Digital Storytelling (COHDS) na Concordia University, criado em 2006. A discussão aborda a abordagem de High à história oral, a metodologia de "pesquisa-criação" desenvolvida ao longo de 15 anos, e sua perspectiva sobre história oral como "uma prática interdisciplinar e criativa" em vez de metodologia disciplinar.',
+      en: 'Interview with Canadian oral historian Steven High, author of numerous award-winning books and founder of the Centre for Oral History and Digital Storytelling (COHDS) at Concordia University, established in 2006. The discussion addresses High\'s approach to oral history, the "research-creation" methodology developed over 15 years, and his perspective on oral history as "an interdisciplinary and creative practice" rather than a disciplinary methodology.',
+    },
+    aboutInterviewee: {
+      pt: 'Steven High é historiador oral canadense, autor de diversos livros premiados e fundador do Centre for Oral History and Digital Storytelling (COHDS) na Concordia University, criado em 2006.',
+      en: 'Steven High is a Canadian oral historian, author of numerous award-winning books and founder of the Centre for Oral History and Digital Storytelling (COHDS) at Concordia University, established in 2006.',
+    },
+  },
   book: {
     title: 'O Super-8 no AI-5',
     subtitle: {
@@ -147,6 +181,7 @@ export const siteContent = {
             pt: 'Publicação em Revista História Oral - entrevista bilingue. Sobre compartilhar histórias e o desafio criativo de mantê-las vivas: entrevista com Steven High, fundador do Centre for Oral History and Digital Storytelling na Concordia University, em Montreal.',
             en: 'Publication in Revista História Oral — bilingual interview. On sharing stories and the creative challenge of keeping them alive: interview with Steven High, founder of the Centre for Oral History and Digital Storytelling at Concordia University, Montreal.',
           },
+          link: '/historia-oral-steven-high',
         },
         {
           year: '2021–2025',
