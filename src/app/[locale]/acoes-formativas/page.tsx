@@ -1,21 +1,28 @@
 // ABOUTME: Ações Formativas portfolio page showing teaching and training work.
 // ABOUTME: Displays timeline of educational and training initiatives.
 
-import { siteContent } from '@/config/content';
+import { type Locale, siteContent, t } from '@/config/content';
 import { PortfolioSection } from '@/components/portfolio-section';
 
 export const metadata = {
   title: 'Ações Formativas — Mayra Jucá',
-  description: siteContent.sections.formativas.subtitle.pt,
 };
 
-export default function FormativasPage() {
+export default async function FormativasPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: l } = await params;
+  const locale = l as Locale;
   const { title, subtitle, items } = siteContent.sections.formativas;
+
   return (
     <PortfolioSection
-      title={title.pt}
-      subtitle={subtitle.pt}
+      title={t(title, locale)}
+      subtitle={t(subtitle, locale)}
       items={items}
+      locale={locale}
     />
   );
 }
