@@ -5,7 +5,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { type Locale, siteContent, t } from '@/config/content';
 
-const heroLabel = { pt: 'Portfólio', en: 'Portfolio' };
+const heroRole = { pt: 'Jornalista, cineasta e pesquisadora', en: 'Journalist, filmmaker and researcher' };
+const heroTagline = {
+  pt: 'Há mais de 30 anos usando a história oral e o audiovisual a serviço da memória, da cultura e das causas sociais.',
+  en: 'For over 30 years, using oral history and audiovisual media in service of memory, culture and social causes.',
+};
+const heroCta = { pt: 'Conheça o trabalho →', en: 'Explore the work →' };
 const featuredCta = { pt: 'Conheça o livro →', en: 'Discover the book →' };
 const aboutCta = { pt: 'Conheça Mayra →', en: 'About Mayra →' };
 
@@ -31,18 +36,42 @@ export default async function HomePage({
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary text-white py-24 sm:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="font-heading uppercase tracking-[0.3em] text-sm mb-6 opacity-80">
-            {t(heroLabel, locale)}
-          </p>
-          <h1 className="font-heading font-black text-4xl sm:text-6xl lg:text-7xl mb-4">
-            Mayra Jucá
-          </h1>
-          <div className="w-24 h-0.5 bg-white/50 mx-auto my-6" />
-          <p className="text-xl sm:text-2xl font-heading opacity-90">
-            {t(siteContent.hero.subheadline, locale)}
-          </p>
+      <section className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center">
+        <Image
+          src="/images/mayra-hero.jpg"
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-xl">
+            <h1 className="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-white mb-3">
+              Mayra Jucá
+            </h1>
+            <p className="font-heading text-lg sm:text-xl text-white/90 mb-6">
+              {t(heroRole, locale)}
+            </p>
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
+              {t(heroTagline, locale)}
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href={`/${locale}/sobre`}
+                className="inline-block bg-primary text-white font-heading font-bold text-sm uppercase tracking-wider px-6 py-3 rounded hover:opacity-90 transition-opacity"
+              >
+                {t(aboutCta, locale)}
+              </Link>
+              <Link
+                href={`/${locale}/editorial`}
+                className="inline-block border-2 border-white text-white font-heading font-bold text-sm uppercase tracking-wider px-6 py-3 rounded hover:bg-white/10 transition-colors"
+              >
+                {t(heroCta, locale)}
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
