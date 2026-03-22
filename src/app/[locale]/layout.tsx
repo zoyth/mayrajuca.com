@@ -3,6 +3,7 @@
 
 import Link from 'next/link';
 import { MobileNav } from '@/components/mobile-nav';
+import { NavDropdown } from '@/components/nav-dropdown';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { type Locale, locales, siteContent, t } from '@/config/content';
 
@@ -10,9 +11,20 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-function getNavLinks(locale: Locale) {
+const portfolioLabel = { pt: 'Portfólio', en: 'Portfolio' };
+
+function getPortfolioLinks(locale: Locale) {
   return [
-    { href: `/${locale}`, label: t(siteContent.nav.home, locale) },
+    { href: `/${locale}/editorial`, label: t(siteContent.nav.editorial, locale) },
+    { href: `/${locale}/audiovisual`, label: t(siteContent.nav.audiovisual, locale) },
+    { href: `/${locale}/eventos`, label: t(siteContent.nav.eventos, locale) },
+    { href: `/${locale}/formacao`, label: t(siteContent.nav.formacao, locale) },
+    { href: `/${locale}/trajetoria`, label: t(siteContent.nav.trajetoria, locale) },
+  ];
+}
+
+function getMobileNavLinks(locale: Locale) {
+  return [
     { href: `/${locale}/sobre`, label: t(siteContent.nav.sobre, locale) },
     { href: `/${locale}/editorial`, label: t(siteContent.nav.editorial, locale) },
     { href: `/${locale}/audiovisual`, label: t(siteContent.nav.audiovisual, locale) },
@@ -32,7 +44,8 @@ export default async function LocaleLayout({
 }) {
   const { locale: localeParam } = await params;
   const locale = (locales.includes(localeParam as Locale) ? localeParam : 'pt') as Locale;
-  const navLinks = getNavLinks(locale);
+  const portfolioLinks = getPortfolioLinks(locale);
+  const mobileLinks = getMobileNavLinks(locale);
 
   return (
     <html lang={locale === 'pt' ? 'pt-BR' : 'en'}>
@@ -44,20 +57,27 @@ export default async function LocaleLayout({
                 Mayra Jucá
               </Link>
               <nav className="hidden lg:flex items-center gap-6">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="text-sm font-medium text-text-light hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                <Link
+                  href={`/${locale}/sobre`}
+                  className="text-sm font-medium text-text-light hover:text-primary transition-colors"
+                >
+                  {t(siteContent.nav.sobre, locale)}
+                </Link>
+                <NavDropdown
+                  label={t(portfolioLabel, locale)}
+                  items={portfolioLinks}
+                />
+                <Link
+                  href={`/${locale}/contato`}
+                  className="text-sm font-medium text-text-light hover:text-primary transition-colors"
+                >
+                  {t(siteContent.nav.contato, locale)}
+                </Link>
                 <LanguageSwitcher locale={locale} />
               </nav>
               <div className="lg:hidden flex items-center gap-3">
                 <LanguageSwitcher locale={locale} />
-                <MobileNav links={navLinks} />
+                <MobileNav links={mobileLinks} />
               </div>
             </div>
           </div>
@@ -79,7 +99,7 @@ export default async function LocaleLayout({
                   {t(siteContent.footer.links, locale)}
                 </h3>
                 <ul className="space-y-2">
-                  {navLinks.slice(1).map((link) => (
+                  {mobileLinks.map((link) => (
                     <li key={link.href}>
                       <Link
                         href={link.href}
