@@ -54,12 +54,12 @@ export default async function HomePage({
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <Link href={`/${locale}/o-super-8-no-ai-5`} className="group">
-              <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow">
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden group-hover:opacity-90 transition-opacity">
                 <Image
-                  src="/images/super8-ai5-capa.jpg"
-                  alt="O Super-8 no AI-5"
+                  src="/images/super8-books.jpg"
+                  alt="O Super-8 no AI-5 — livro"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
@@ -95,7 +95,7 @@ export default async function HomePage({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <div className="relative aspect-square rounded-lg overflow-hidden md:col-span-1">
               <Image
-                src="/images/mayra-juca.jpg"
+                src="/images/mayra-juca.webp"
                 alt="Mayra Jucá"
                 fill
                 className="object-cover"
