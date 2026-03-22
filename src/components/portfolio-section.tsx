@@ -11,6 +11,7 @@ interface PortfolioItem {
   description: Record<string, string>;
   image?: string;
   link?: string;
+  video?: string;
 }
 
 interface PortfolioSectionProps {
@@ -69,14 +70,26 @@ export function PortfolioSection({
                   <p className="text-text-light leading-relaxed">
                     {t(item.description, locale)}
                   </p>
-                  {item.link && (
-                    <Link
-                      href={`/${locale}${item.link}`}
-                      className="inline-block mt-3 text-primary text-sm font-medium hover:opacity-80 transition-opacity"
-                    >
-                      {locale === 'pt' ? 'Saiba mais →' : 'Learn more →'}
-                    </Link>
-                  )}
+                  <div className="flex flex-wrap gap-4 mt-3">
+                    {item.link && (
+                      <Link
+                        href={`/${locale}${item.link}`}
+                        className="text-primary text-sm font-medium hover:opacity-80 transition-opacity"
+                      >
+                        {locale === 'pt' ? 'Saiba mais →' : 'Learn more →'}
+                      </Link>
+                    )}
+                    {item.video && (
+                      <a
+                        href={item.video}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary text-sm font-medium hover:opacity-80 transition-opacity"
+                      >
+                        {locale === 'pt' ? 'Assistir vídeo →' : 'Watch video →'}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </article>
             ))}
