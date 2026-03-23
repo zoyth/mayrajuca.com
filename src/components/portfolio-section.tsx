@@ -5,6 +5,9 @@ import Link from 'next/link';
 import type { Locale } from '@/config/content';
 import { t } from '@/config/content';
 
+const learnMore = { pt: 'Saiba mais →', en: 'Learn more →', fr: 'En savoir plus →', es: 'Más información →' };
+const watchVideo = { pt: 'Assistir vídeo →', en: 'Watch video →', fr: 'Regarder la vidéo →', es: 'Ver video →' };
+
 interface PortfolioItem {
   year: string;
   title: Record<string, string>;
@@ -76,7 +79,7 @@ export function PortfolioSection({
                         href={`/${locale}${item.link}`}
                         className="text-primary text-sm font-medium hover:opacity-80 transition-opacity"
                       >
-                        {locale === 'pt' ? 'Saiba mais →' : 'Learn more →'}
+                        {t(learnMore, locale)}
                       </Link>
                     )}
                     {item.video && (
@@ -86,7 +89,7 @@ export function PortfolioSection({
                         rel="noopener noreferrer"
                         className="text-primary text-sm font-medium hover:opacity-80 transition-opacity"
                       >
-                        {locale === 'pt' ? 'Assistir vídeo →' : 'Watch video →'}
+                        {t(watchVideo, locale)}
                       </a>
                     )}
                   </div>

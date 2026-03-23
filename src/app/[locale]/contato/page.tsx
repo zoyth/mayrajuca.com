@@ -7,33 +7,33 @@ export const metadata = {
   title: 'Contato — Mayra Jucá',
 };
 
-const phoneLabel = { pt: 'Celular', en: 'Phone' };
+const phoneLabel = { pt: 'Celular', en: 'Phone', fr: 'Téléphone', es: 'Teléfono' };
 
 const contactItems = [
   {
-    label: { pt: 'Website', en: 'Website' },
+    label: { pt: 'Website', en: 'Website', fr: 'Site web', es: 'Sitio web' },
     value: siteContent.contact.website,
     href: `https://${siteContent.contact.website}`,
   },
   {
-    label: { pt: 'E-mail', en: 'Email' },
+    label: { pt: 'E-mail', en: 'Email', fr: 'E-mail', es: 'Correo' },
     value: siteContent.contact.email,
     href: `mailto:${siteContent.contact.email}`,
   },
   {
-    label: { pt: 'YouTube', en: 'YouTube' },
+    label: { pt: 'YouTube', en: 'YouTube', fr: 'YouTube', es: 'YouTube' },
     value: siteContent.contact.youtube.replace('https://www.youtube.com/', ''),
     href: siteContent.contact.youtube,
     external: true,
   },
   {
-    label: { pt: 'Instagram', en: 'Instagram' },
+    label: { pt: 'Instagram', en: 'Instagram', fr: 'Instagram', es: 'Instagram' },
     value: siteContent.contact.instagram,
     href: `https://www.instagram.com/${siteContent.contact.instagram.replace('@', '')}`,
     external: true,
   },
   {
-    label: { pt: 'LinkedIn', en: 'LinkedIn' },
+    label: { pt: 'LinkedIn', en: 'LinkedIn', fr: 'LinkedIn', es: 'LinkedIn' },
     value: siteContent.contact.linkedin,
     href: `https://www.linkedin.com/in/${siteContent.contact.linkedin}`,
     external: true,

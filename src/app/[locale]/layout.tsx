@@ -11,7 +11,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const portfolioLabel = { pt: 'Portfólio', en: 'Portfolio' };
+const portfolioLabel = { pt: 'Portfólio', en: 'Portfolio', fr: 'Portfolio', es: 'Portafolio' };
 
 function getPortfolioLinks(locale: Locale) {
   return [

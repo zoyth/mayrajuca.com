@@ -5,14 +5,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { type Locale, siteContent, t } from '@/config/content';
 
-const heroRole = { pt: 'Jornalista, cineasta e pesquisadora', en: 'Journalist, filmmaker and researcher' };
+const heroRole = { pt: 'Jornalista, cineasta e pesquisadora', en: 'Journalist, filmmaker and researcher', fr: 'Journaliste, cinéaste et chercheuse', es: 'Periodista, cineasta e investigadora' };
 const heroTagline = {
   pt: 'Há mais de 30 anos usando a história oral e o audiovisual a serviço da memória, da cultura e das causas sociais.',
   en: 'For over 30 years, using oral history and audiovisual media in service of memory, culture and social causes.',
+  fr: 'Depuis plus de 30 ans, au service de la mémoire, de la culture et des causes sociales à travers l\'histoire orale et l\'audiovisuel.',
+  es: 'Desde hace más de 30 años, al servicio de la memoria, la cultura y las causas sociales a través de la historia oral y el audiovisual.',
 };
-const heroCta = { pt: 'Conheça o trabalho →', en: 'Explore the work →' };
-const featuredCta = { pt: 'Conheça o livro →', en: 'Discover the book →' };
-const aboutCta = { pt: 'Conheça Mayra →', en: 'About Mayra →' };
+const heroCta = { pt: 'Conheça o trabalho →', en: 'Explore the work →', fr: 'Découvrir le travail →', es: 'Explorar el trabajo →' };
+const featuredCta = { pt: 'Conheça o livro →', en: 'Discover the book →', fr: 'Découvrir le livre →', es: 'Descubrir el libro →' };
+const aboutCta = { pt: 'Conheça Mayra →', en: 'About Mayra →', fr: 'À propos de Mayra →', es: 'Sobre Mayra →' };
 
 function getSections(locale: Locale) {
   return [

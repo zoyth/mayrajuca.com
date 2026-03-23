@@ -9,21 +9,21 @@ export const metadata = {
 };
 
 const labels = {
-  journal: { pt: 'Periódico', en: 'Journal' },
-  section: { pt: 'Seção', en: 'Section' },
-  volume: { pt: 'Volume', en: 'Volume' },
-  issue: { pt: 'Número', en: 'Issue' },
-  pages: { pt: 'Páginas', en: 'Pages' },
-  published: { pt: 'Publicado em', en: 'Published' },
-  doi: { pt: 'DOI', en: 'DOI' },
-  issn: { pt: 'ISSN', en: 'ISSN' },
-  license: { pt: 'Licença', en: 'License' },
-  keywords: { pt: 'Palavras-chave', en: 'Keywords' },
-  abstract: { pt: 'Resumo', en: 'Abstract' },
-  aboutInterviewee: { pt: 'Sobre o entrevistado', en: 'About the interviewee' },
-  readOriginal: { pt: 'Ler na Revista História Oral', en: 'Read in Revista História Oral' },
-  downloadPdf: { pt: 'Download PDF', en: 'Download PDF' },
-  affiliation: { pt: 'Afiliação', en: 'Affiliation' },
+  journal: { pt: 'Periódico', en: 'Journal', fr: 'Revue', es: 'Revista' },
+  section: { pt: 'Seção', en: 'Section', fr: 'Section', es: 'Sección' },
+  volume: { pt: 'Volume', en: 'Volume', fr: 'Volume', es: 'Volumen' },
+  issue: { pt: 'Número', en: 'Issue', fr: 'Numéro', es: 'Número' },
+  pages: { pt: 'Páginas', en: 'Pages', fr: 'Pages', es: 'Páginas' },
+  published: { pt: 'Publicado em', en: 'Published', fr: 'Publié le', es: 'Publicado' },
+  doi: { pt: 'DOI', en: 'DOI', fr: 'DOI', es: 'DOI' },
+  issn: { pt: 'ISSN', en: 'ISSN', fr: 'ISSN', es: 'ISSN' },
+  license: { pt: 'Licença', en: 'License', fr: 'Licence', es: 'Licencia' },
+  keywords: { pt: 'Palavras-chave', en: 'Keywords', fr: 'Mots-clés', es: 'Palabras clave' },
+  abstract: { pt: 'Resumo', en: 'Abstract', fr: 'Résumé', es: 'Resumen' },
+  aboutInterviewee: { pt: 'Sobre o entrevistado', en: 'About the interviewee', fr: 'À propos de l\'interviewé', es: 'Sobre el entrevistado' },
+  readOriginal: { pt: 'Ler na Revista História Oral', en: 'Read in Revista História Oral', fr: 'Lire dans Revista História Oral', es: 'Leer en Revista História Oral' },
+  downloadPdf: { pt: 'Download PDF', en: 'Download PDF', fr: 'Télécharger PDF', es: 'Descargar PDF' },
+  affiliation: { pt: 'Afiliação', en: 'Affiliation', fr: 'Affiliation', es: 'Afiliación' },
 };
 
 export default async function ArticlePage({
